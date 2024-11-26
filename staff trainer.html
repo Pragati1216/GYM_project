@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style >
+        .menu-item:hover {
+            background: #333;
+          }
+          .menu-item i {
+            margin-right: 10px;
+          }
+          .submenu {
+            display: none;
+            flex-direction: column;
+            background: #29293d;
+            color: #fff;
+          }
+          .menu-item:hover + .submenu {
+            display: flex;
+          }
+          .submenu-item {
+            padding: 10px 40px;
+            font-size: 13px;
+            border-bottom: 1px solid #444;
+          }
+          .submenu-item:hover {
+            background: #444;
+          }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="flex">
+        <aside class="w-64 bg-gray-800 text-white h-screen p-5">
+            <li class="menu-item"><b></b>Admin ▼</li>
+          <div class="submenu">
+           <li class="submenu-item"><b class="icon"></b>Staff/Trainers</li>
+          <li class="submenu-item"><b class="icon"></b>Membership</li>
+          <li class="submenu-item"><b class="icon"></b>All Classes</li>
+          <li class="submenu-item"><b class="icon"></b>Attendance</li>
+            <!-- <a class="submenu-item" >Add Trainee</a>
+            <a class="submenu-item">Dropped Trainee</a>
+            <a class="submenu-item">Member Details</a> -->
+          </div>
+                <hr class="border-gray-600 my-3" />
+                <a href="#" class="flex items-center gap-3 px-3 py-2 hover:bg-gray-700 rounded">
+                    👥<span>All Members</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 hover:bg-gray-700 rounded">👤
+                    <span>Trainer</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 hover:bg-gray-700 rounded">👥
+                    📋<span>Trainee</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 hover:bg-gray-700 rounded">
+                    ❤️<span>Health Updates</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 hover:bg-gray-700 rounded">
+                    💳<span>Member Payment</span>
+                </a>
+                <a href="#" class="flex items-center gap-3 px-3 py-2 hover:bg-gray-700 rounded">
+                    📅<span>Plan</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-5">
+            <header class="flex justify-between items-center mb-5">
+                <h1 class="text-xl font-bold">Welcome Admin!</h1>
+                <div class="flex items-center gap-3">
+                    <button class="p-2 bg-gray-200 rounded-full">
+                        <img src="n.png" alt="Notifications" class="w-5">
+
+                    </button>
+                    <button class="p-2 bg-gray-200 rounded-full">
+                        <img src="Settings.png" alt="setting" class="w-5">
+
+                    </button>
+                    <p>Username</p>
+                    <img src="3.jpg"Profile" class="ml-4 h-10 w-10 rounded-full">
+                </div>
+
+            </header>
+
+            <!-- Staff/Trainers Table -->
+            <div class="bg-white p-5 rounded shadow">
+                <div class="flex justify-between items-center mb-5">
+                    <h2 class="text-lg font-bold">Staff/Trainers</h2>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                        Add Staff/Trainer
+                    </button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b bg-gray-100">
+                                <th class="px-4 py-2">Photo</th>
+                                <th class="px-4 py-2">Staff Name</th>
+                                <th class="px-4 py-2">Contact No.</th>
+                                <th class="px-4 py-2">Profession</th>
+                                <th class="px-4 py-2">Experience</th>
+                                <th class="px-4 py-2">Email Id</th>
+                                <th class="px-4 py-2">Batch</th>
+                                <th class="px-4 py-2">Details</th>
+                                <th class="px-4 py-2">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Repeated Row Example -->
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-4 py-2">
+                                    <img src="1.jpg" alt="Profile" class="w-10 h-10 rounded-full">
+                                </td>
+                                <td class="px-4 py-2">Staff Full Name</td>
+                                <td class="px-4 py-2">1234567890</td>
+                                <td class="px-4 py-2">Yoga</td>
+                                <td class="px-4 py-2">2 Yrs</td>
+                                <td class="px-4 py-2">abc@gmail.com</td>
+                                <td class="px-4 py-2">Morning</td>
+                                <td class="px-4 py-2 text-blue-500 cursor-pointer">View Details</td>
+                                <td class="px-4 py-2 flex gap-2">
+                                    <button class="text-blue-500 hover:text-blue-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l-3 3m6 6l3-3M14 4l6 6m0 0L14 4l6 6zm0 0L10 18" />
+                                        </svg>
+                                    </button>
+                                    <button class="text-red-500 hover:text-red-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M9 7h6" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+                            <!-- Repeat rows as necessary -->
+
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-4 py-2">
+                                    <img src="2.jpg" alt="Profile" class="w-10 h-10 rounded-full">
+                                </td>
+                                <td class="px-4 py-2">Staff Full Name</td>
+                                <td class="px-4 py-2">1234567890</td>
+                                <td class="px-4 py-2">Yoga</td>
+                                <td class="px-4 py-2">2 Yrs</td>
+                                <td class="px-4 py-2">abc@gmail.com</td>
+                                <td class="px-4 py-2">Morning</td>
+                                <td class="px-4 py-2 text-blue-500 cursor-pointer">View Details</td>
+                                <td class="px-4 py-2 flex gap-2">
+                                    <button class="text-blue-500 hover:text-blue-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l-3 3m6 6l3-3M14 4l6 6m0 0L14 4l6 6zm0 0L10 18" />
+                                        </svg>
+                                    </button>
+                                    <button class="text-red-500 hover:text-red-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M9 7h6" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-4 py-2">
+                                    <img src="1.jpg" alt="Profile" class="w-10 h-10 rounded-full">
+                                </td>
+                                <td class="px-4 py-2">Staff Full Name</td>
+                                <td class="px-4 py-2">1234567890</td>
+                                <td class="px-4 py-2">Yoga</td>
+                                <td class="px-4 py-2">2 Yrs</td>
+                                <td class="px-4 py-2">abc@gmail.com</td>
+                                <td class="px-4 py-2">Morning</td>
+                                <td class="px-4 py-2 text-blue-500 cursor-pointer">View Details</td>
+                                <td class="px-4 py-2 flex gap-2">
+                                    <button class="text-blue-500 hover:text-blue-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l-3 3m6 6l3-3M14 4l6 6m0 0L14 4l6 6zm0 0L10 18" />
+                                        </svg>
+                                    </button>
+                                    <button class="text-red-500 hover:text-red-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M9 7h6" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-4 py-2">
+                                    <img src="2.jpg" alt="Profile" class="w-10 h-10 rounded-full">
+                                </td>
+                                <td class="px-4 py-2">Staff Full Name</td>
+                                <td class="px-4 py-2">1234567890</td>
+                                <td class="px-4 py-2">Yoga</td>
+                                <td class="px-4 py-2">2 Yrs</td>
+                                <td class="px-4 py-2">abc@gmail.com</td>
+                                <td class="px-4 py-2">Morning</td>
+                                <td class="px-4 py-2 text-blue-500 cursor-pointer">View Details</td>
+                                <td class="px-4 py-2 flex gap-2">
+                                    <button class="text-blue-500 hover:text-blue-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l-3 3m6 6l3-3M14 4l6 6m0 0L14 4l6 6zm0 0L10 18" />
+                                        </svg>
+                                    </button>
+                                    <button class="text-red-500 hover:text-red-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M9 7h6" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-4 py-2">
+                                    <img src="1.jpg" alt="Profile" class="w-10 h-10 rounded-full">
+                                </td>
+                                <td class="px-4 py-2">Staff Full Name</td>
+                                <td class="px-4 py-2">1234567890</td>
+                                <td class="px-4 py-2">Yoga</td>
+                                <td class="px-4 py-2">2 Yrs</td>
+                                <td class="px-4 py-2">abc@gmail.com</td>
+                                <td class="px-4 py-2">Morning</td>
+                                <td class="px-4 py-2 text-blue-500 cursor-pointer">View Details</td>
+                                <td class="px-4 py-2 flex gap-2">
+                                    <button class="text-blue-500 hover:text-blue-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l-3 3m6 6l3-3M14 4l6 6m0 0L14 4l6 6zm0 0L10 18" />
+                                        </svg>
+                                    </button>
+                                    <button class="text-red-500 hover:text-red-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M9 7h6" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="px-4 py-2">
+                                    <img src="2.jpg" alt="Profile" class="w-10 h-10 rounded-full">
+                                </td>
+                                <td class="px-4 py-2">Staff Full Name</td>
+                                <td class="px-4 py-2">1234567890</td>
+                                <td class="px-4 py-2">Yoga</td>
+                                <td class="px-4 py-2">2 Yrs</td>
+                                <td class="px-4 py-2">abc@gmail.com</td>
+                                <td class="px-4 py-2">Morning</td>
+                                <td class="px-4 py-2 text-blue-500 cursor-pointer">View Details</td>
+                                <td class="px-4 py-2 flex gap-2">
+                                    <button class="text-blue-500 hover:text-blue-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l-3 3m6 6l3-3M14 4l6 6m0 0L14 4l6 6zm0 0L10 18" />
+                                        </svg>
+                                    </button>
+                                    <button class="text-red-500 hover:text-red-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M9 7h6" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

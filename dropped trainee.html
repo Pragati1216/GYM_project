@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropped Trainees</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+     .arrow {
+      color: white; /* White color for the arrow */
+      font-size: 2rem; /* Adjust size of the arrow */
+      margin-right: 10px; /* Space between arrow and logo */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Sidebar -->
+  <div class="flex h-screen">
+    <aside class="w-64 bg-gray-900 text-white flex flex-col">
+      <div class="flex items-center justify-center h-20">
+        <span class="arrow">&#8592;</span>
+        <img src="logo.jpg" alt="Logo" class="h-12">
+      </div>
+      <nav class="mt-4 flex-grow">
+        <ul>
+          <li class="p-4 hover:bg-gray-700"><a href="#" class="flex items-center">🏋️‍♂️Admin</a></li>
+          <li class="p-4 hover:bg-gray-700"><a href="#" class="flex items-center">👥All Members</a></li>
+          <ul class="pl-6">
+            <li class="p-4 hover:bg-gray-700"><a href="#">📅Add Trainee</a></li>
+            <li class="p-4 bg-gray-700"><a href="#">📅Dropped Trainee</a></li>
+            <li class="p-4 hover:bg-gray-700"><a href="#">💳Member Details</a></li>
+          </ul>
+          <li class="p-4 hover:bg-gray-700"><a href="#">👤Trainer</a></li>
+          <li class="p-4 hover:bg-gray-700"><a href="#">👤Trainee</a></li>
+          <li class="p-4 hover:bg-gray-700"><a href="#">❤️Health Updates</a></li>
+          <li class="p-4 hover:bg-gray-700"><a href="#">📅Member Payments</a></li>
+          <li class="p-4 hover:bg-gray-700"><a href="#">💳Plan</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-grow p-6">
+      <header class="flex justify-between items-center mb-6">
+        <h1 class="text-2xl font-semibold">Welcome Admin!</h1>
+        <div class="flex items-center space-x-4">
+          <!-- <button class="text-gray-700">
+             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405 1.405C19.078 19.52 19 20 19 20H9s-.078-.48-.595-1.595L7 17h5M12 3c-2.667 0-8 3.2-8 8 0 2.24 1 4.2 2 5.335V18a2 2 0 002 2h8a2 2 0 002-2v-1.665C19 15.2 20 13.24 20 11c0-4.8-5.333-8-8-8z"/>
+            </svg> 
+          </button> -->
+          <button class="p-2 bg-gray-200 rounded-full">
+            <img src="n.png" alt="Notifications" class="w-5">
+
+        </button>
+        <button class="p-2 bg-gray-200 rounded-full">
+          <img src="Settings.png" alt="setting" class="w-5">
+
+      </button>
+          <img src="3.jpg" alt="User" class="h-10 w-10 rounded-full">
+        </div>
+      </header>
+
+      <!-- Table -->
+      <section>
+        <h2 class="text-lg font-semibold mb-4">Dropped Trainees</h2>
+        <div class="overflow-x-auto">
+          <table class="table-auto w-full bg-white rounded-lg shadow-lg">
+            <thead class="bg-gray-200">
+              <tr>
+                <th class="px-4 py-2">Photo</th>
+                <th class="px-4 py-2">Trainee Name</th>
+                <th class="px-4 py-2">Contact No.</th>
+                <th class="px-4 py-2">Join Date</th>
+                <th class="px-4 py-2">End Date</th>
+                <th class="px-4 py-2">Period</th>
+                <th class="px-4 py-2">Batch</th>
+                <th class="px-4 py-2">Class</th>
+                <th class="px-4 py-2">Status</th>
+                <th class="px-4 py-2">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hover:bg-gray-100">
+                <td class="px-4 py-2"><img src="1.jpg" alt="Photo" class="h-10 w-10 rounded-full"></td>
+                <td class="px-4 py-2">Staff full Name</td>
+                <td class="px-4 py-2">1234567890</td>
+                <td class="px-4 py-2">01/11/2024</td>
+                <td class="px-4 py-2">31/12/2024</td>
+                <td class="px-4 py-2">60 days</td>
+                <td class="px-4 py-2">Morning</td>
+                <td class="px-4 py-2">Yoga</td>
+                <td class="px-4 py-2 ">Inactive</td>
+                <td class="px-4 py-2">
+                    <button class="hover:text-red-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                      </button>
+                    <tr class="hover:bg-gray-100">
+                        <td class="px-4 py-2"><img src="2.jpg" alt="Photo" class="h-10 w-10 rounded-full"></td>
+                        <td class="px-4 py-2">Staff full Name</td>
+                        <td class="px-4 py-2">1234567890</td>
+                        <td class="px-4 py-2">01/11/2024</td>
+                        <td class="px-4 py-2">31/12/2024</td>
+                        <td class="px-4 py-2">60 days</td>
+                        <td class="px-4 py-2">Morning</td>
+                        <td class="px-4 py-2">Yoga</td>
+                        <td class="px-4 py-2 ">Inactive</td>
+                        <td class="px-4 py-2">
+                            <button class="hover:text-red-700">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                              </button>
+                            
+                            <tr class="hover:bg-gray-100">
+                                <td class="px-4 py-2"><img src="1.jpg" alt="Photo" class="h-10 w-10 rounded-full"></td>
+                                <td class="px-4 py-2">Staff full Name</td>
+                                <td class="px-4 py-2">1234567890</td>
+                                <td class="px-4 py-2">01/11/2024</td>
+                                <td class="px-4 py-2">31/12/2024</td>
+                                <td class="px-4 py-2">60 days</td>
+                                <td class="px-4 py-2">Morning</td>
+                                <td class="px-4 py-2">Yoga</td>
+                                <td class="px-4 py-2 ">Inactive</td>
+                                <td class="px-4 py-2">
+
+        
+
+
+
+                  <button class="hover:text-red-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <!-- Repeat similar rows as needed -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

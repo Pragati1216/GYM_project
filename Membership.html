@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .arrow {
+     color: white; /* White color for the arrow */
+     font-size: 2rem; /* Adjust size of the arrow */
+     margin-right: 10px; /* Space between arrow and logo */
+   }
+ </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Main Container -->
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-white flex flex-col">
+      <div class="p-4 flex items-center">
+        <span class="arrow">&#8592;</span>
+        <img src="logo.jpg" alt="Logo" class="h-16 mr-8">
+        
+      </div>
+      <nav class="flex-grow">
+        <ul>
+          <li class="py-2 px-4 hover:bg-gray-700"><a href="#">Admin</a></li>
+          <li class="py-2 px-4 hover:bg-gray-700"><a href="#">Staff/Trainers</a></li>
+          <li class="py-2 px-4 hover:bg-gray-700 bg-gray-700"><a href="#">Membership</a></li>
+          <li class="py-2 px-4 hover:bg-gray-700"><a href="#">All Classes</a></li>
+          <li class="py-2 px-4 hover:bg-gray-700"><a href="#">Attendance</a></li>
+          <li class="py-2 px-4 hover:bg-gray-700"><a href="#">All Members</a></li>
+          <li class="py-2 px-4 hover:bg-gray-700"><a href="#">Trainer</a></li>
+          <li class="py-2 px-4 hover:bg-gray-700"><a href="#">Trainee</a></li>
+          <li class="py-2 px-4 hover:bg-gray-700"><a href="#">Health Updates</a></li>
+          <li class="py-2 px-4 hover:bg-gray-700"><a href="#">Member Payment</a></li>
+          <li class="py-2 px-4 hover:bg-gray-700"><a href="#">Plan</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="flex-grow bg-white p-6">
+      <header class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-semibold">Membership</h2>
+        <div class="flex items-center">
+          <input type="text" placeholder="Search Membership" class="border border-gray-300 rounded-lg px-4 py-2 mr-2">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Add Membership</button>
+          <img src="3.jpg" alt="Profile" class="ml-4 h-10 w-10 rounded-full">
+        </div>
+      </header>
+
+      <!-- Table -->
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white">
+          <thead class="bg-gray-200">
+            <tr>
+              <th class="px-4 py-2 text-left">Sr. No</th>
+              <th class="px-4 py-2 text-left">Membership Name</th>
+              <th class="px-4 py-2 text-left">Description</th>
+              <th class="px-4 py-2 text-left">Amount</th>
+              <th class="px-4 py-2 text-left">Membership Period</th>
+              <th class="px-4 py-2 text-left">Installment Period</th>
+              <th class="px-4 py-2 text-left">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row -->
+            <tr class="hover:bg-gray-100">
+              <td class="px-4 py-2  text-center">1</td>
+              <td class="px-4 py-2 ">Basic Membership</td>
+              <td class="px-4 py-2  text-sm max-w-xs overflow-hidden text-ellipsis">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+              <td class="px-4 py-2  text-center">1000/-</td>
+              <td class="px-4 py-2  text-center">30 Days</td>
+              <td class="px-4 py-2  text-center">1 month</td>
+              <td class="px-4 py-2  text-center">
+                <!-- Edit Icon -->
+                <a href="#edit" class="inline-block">
+                  <img src="e.png" alt="Edit" class="h-5 w-5 hover:opacity-80">
+                </a>
+                <!-- Delete Icon -->
+                <a href="#delete" class="inline-block ml-2">
+                  <img src="d.png" alt="Delete" class="h-5 w-5 hover:opacity-80">
+                </a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="px-4 py-2  text-center">1</td>
+              <td class="px-4 py-2 ">Basic Membership</td>
+              <td class="px-4 py-2  text-sm max-w-xs overflow-hidden text-ellipsis">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+              <td class="px-4 py-2 text-center">1000/-</td>
+              <td class="px-4 py-2  text-center">30 Days</td>
+              <td class="px-4 py-2  text-center">1 month</td>
+              <td class="px-4 py-2  text-center">
+                <!-- Edit Icon -->
+                <a href="#edit" class="inline-block">
+                  <img src="e.png" alt="Edit" class="h-5 w-5 hover:opacity-80">
+                </a>
+                <!-- Delete Icon -->
+                <a href="#delete" class="inline-block ml-2">
+                  <img src="d.png" alt="Delete" class="h-5 w-5 hover:opacity-80">
+                </a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="px-4 py-2 text-center">1</td>
+              <td class="px-4 py-2">Basic Membership</td>
+              <td class="px-4 py- text-sm max-w-xs overflow-hidden text-ellipsis">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+              <td class="px-4 py-2 text-center">1000/-</td>
+              <td class="px-4 py-2 text-center">30 Days</td>
+              <td class="px-4 py-2 text-center">1 month</td>
+              <td class="px-4 py-2 text-center">
+                <!-- Edit Icon -->
+                <a href="#edit" class="inline-block">
+                  <img src="e.png" alt="Edit" class="h-5 w-5 hover:opacity-80">
+                </a>
+                <!-- Delete Icon -->
+                <a href="#delete" class="inline-block ml-2">
+                  <img src="d.png" alt="Delete" class="h-5 w-5 hover:opacity-80">
+                </a>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="px-4 py-2  text-center">1</td>
+              <td class="px-4 py-2 ">Basic Membership</td>
+              <td class="px-4 py-2  text-sm max-w-xs overflow-hidden text-ellipsis">Offers access to standard gym facilities like cardio and weight equipment during regular hours. Ideal for individuals seeking general fitness without additional perks.</td>
+              <td class="px-4 py-2  text-center">1000/-</td>
+              <td class="px-4 py-2  text-center">30 Days</td>
+              <td class="px-4 py-2  text-center">1 month</td>
+              <td class="px-4 py-2  text-center">
+                <!-- Edit Icon -->
+                <a href="#edit" class="inline-block">
+                  <img src="e.png" alt="Edit" class="h-5 w-5 hover:opacity-80">
+                </a>
+                <!-- Delete Icon -->
+                <a href="#delete" class="inline-block ml-2">
+                  <img src="d.png" alt="Delete" class="h-5 w-5 hover:opacity-80">
+                </a>
+              </td>
+            </tr>
+            <!-- Duplicate the row for more entries -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

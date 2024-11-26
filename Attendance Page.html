@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-900 text-white flex flex-col">
+            <div class="p-4 flex items-center">
+                <span class="arrow">&#8592;</span>
+                
+                <img src="logo.jpg" alt="Fitness Logo" class="h-12 mr-2"> <!-- Replace with your logo -->
+              
+            </div>
+            <nav class="flex-1">
+                <ul>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            <!-- <span class="material-icons-outlined">dashboard</span> -->
+                            <!-- <span class="ml-2">Admin</span>
+                        </a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Staff/Trainers</a>
+                        <a href="#" class="block p-2 bg-gray-800 text-white rounded">Membership</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">All Classes</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Attendance</a>
+                    </li>
+                </ul> -->
+                <span class="ml-2">Admin</span>
+                        </a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Staff/Trainers</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Membership</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">All Classes</a>
+                        <a href="#" class="block p-2 bg-gray-800 text-white rounded">Attendance</a>
+                    </li>
+                </ul>
+                <ul class="mt-4">
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">All Members</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">Trainer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">Trainee</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                           
+                            <span class="ml-2">Health Updates</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                           
+                            <span class="ml-2">Member Payments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">Plan</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+      <header class="bg-white shadow p-4 flex items-center justify-between">
+        <h2 class="text-lg font-semibold">Welcome Admin!</h2>
+        <div class="flex items-center">
+            <button class="p-2 bg-gray-200 rounded-full">
+                <img src="n.png" alt="Notifications" class="w-5">
+            </button>
+            <button class="p-2 bg-gray-200 rounded-full">
+                <img src="Settings.png" alt="setting" class="w-5">
+
+            </button>
+            <p>Username</p>
+            <img src="3.jpg" alt="Profile" class="ml-4 h-10 w-10 rounded-full">
+        </div>
+      </header>
+      <main class="flex-1 p-6">
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-4">Attendance</h3>
+          <div class="flex items-center space-x-4 mb-6">
+            <input type="date" class="border border-gray-300 rounded p-2">
+            <select class="border border-gray-300 rounded p-2">
+              <option value="">-Select Class-</option>
+              <option value="class1">Class 1</option>
+              <option value="class2">Class 2</option>
+            </select>
+            <input type="time" class="border border-gray-300 rounded p-2">
+            <input type="time" class="border border-gray-300 rounded p-2">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Take Attendance</button>
+          </div>
+          <table class="w-full text-left">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="p-3">Photo</th>
+                <th class="p-3">Name</th>
+                <th class="p-3">Present</th>
+                <th class="p-3">Absent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Example row -->
+              <tr class="border-t">
+                <td class="p-3"><img src="1.jpg" alt="Profile" class="w-10 h-10 rounded-full"></td>
+                <td class="p-3">Staff Full Name</td>
+                <td class="p-3"><input type="radio" name="attendance1" class="cursor-pointer"></td>
+                <td class="p-3"><input type="radio" name="attendance1" class="cursor-pointer"></td>
+              </tr>
+              <!-- Repeat rows -->
+              <tr class="border-t">
+                <td class="p-3"><img src="2.jpg" alt="Profile" class="w-10 h-10 rounded-full"></td>
+                <td class="p-3">Staff Full Name</td>
+                <td class="p-3"><input type="radio" name="attendance2" class="cursor-pointer"></td>
+                <td class="p-3"><input type="radio" name="attendance2" class="cursor-pointer"></td>
+              </tr>
+
+              <tr class="border-t">
+                <td class="p-3"><img src="1.jpg" alt="Profile" class="w-10 h-10 rounded-full"></td>
+                <td class="p-3">Staff Full Name</td>
+                <td class="p-3"><input type="radio" name="attendance2" class="cursor-pointer"></td>
+                <td class="p-3"><input type="radio" name="attendance2" class="cursor-pointer"></td>
+              </tr>
+
+              <tr class="border-t">
+                <td class="p-3"><img src="2.jpg" alt="Profile" class="w-10 h-10 rounded-full"></td>
+                <td class="p-3">Staff Full Name</td>
+                <td class="p-3"><input type="radio" name="attendance2" class="cursor-pointer"></td>
+                <td class="p-3"><input type="radio" name="attendance2" class="cursor-pointer"></td>
+              </tr>
+
+              <tr class="border-t">
+                <td class="p-3"><img src="1.jpg" alt="Profile" class="w-10 h-10 rounded-full"></td>
+                <td class="p-3">Staff Full Name</td>
+                <td class="p-3"><input type="radio" name="attendance2" class="cursor-pointer"></td>
+                <td class="p-3"><input type="radio" name="attendance2" class="cursor-pointer"></td>
+              </tr>
+
+              <tr class="border-t">
+                <td class="p-3"><img src="2.jpg" alt="Profile" class="w-10 h-10 rounded-full"></td>
+                <td class="p-3">Staff Full Name</td>
+                <td class="p-3"><input type="radio" name="attendance2" class="cursor-pointer"></td>
+                <td class="p-3"><input type="radio" name="attendance2" class="cursor-pointer"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

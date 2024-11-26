@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Class</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-900 text-white flex flex-col">
+            <div class="p-4 flex items-center">
+                <span class="arrow">&#8592;</span>
+                
+                <img src="logo.jpg" alt="Fitness Logo" class="h-12 mr-2"> <!-- Replace with your logo -->
+              
+            </div>
+            <nav class="flex-1">
+                <ul>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            <!-- <span class="material-icons-outlined">dashboard</span> -->
+                            <!-- <span class="ml-2">Admin</span>
+                        </a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Staff/Trainers</a>
+                        <a href="#" class="block p-2 bg-gray-800 text-white rounded">Membership</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">All Classes</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Attendance</a>
+                    </li>
+                </ul> -->
+                <span class="ml-2">Admin</span>
+                        </a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Staff/Trainers</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Membership</a>
+                        <a href="#" class="block p-2 bg-gray-800 hover:bg-gray-800">All Classes</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Attendance</a>
+                    </li>
+                </ul>
+                <ul class="mt-4">
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">All Members</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">Trainer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">Trainee</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                           
+                            <span class="ml-2">Health Updates</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                           
+                            <span class="ml-2">Member Payments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">Plan</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+      <header class="bg-white shadow p-4 flex items-center justify-between">
+        <h2 class="text-lg font-semibold">Welcome Admin!</h2>
+        <div class="flex items-center">
+            <button class="p-2 bg-gray-200 rounded-full">
+                <img src="n.png" alt="Notifications" class="w-5">
+            </button>
+            <button class="p-2 bg-gray-200 rounded-full">
+                <img src="Settings.png" alt="setting" class="w-5">
+
+            </button>
+            <p>Username</p>
+            <img src="3.jpg" alt="Profile" class="ml-4 h-10 w-10 rounded-full">
+        </div>
+      </header>
+      <main class="flex-1 p-6">
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-4">Add Class</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border border-gray-200">
+              <thead class="bg-gray-200">
+                <tr>
+                  <th class="p-3 border">Class Name</th>
+                  <th class="p-3 border">Class Trainer</th>
+                  <th class="p-3 border">Start Time</th>
+                  <th class="p-3 border">End Time</th>
+                  <th class="p-3 border">Description</th>
+                  <th class="p-3 border">Batch</th>
+                  <th class="p-3 border">Days</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Example Class -->
+                <tr>
+                  <td class="p-3 border"><img src="yoga-icon.png" alt="Yoga" class="w-8 h-8 inline mr-2">Yoga</td>
+                  <td class="p-3 border">Trainer Name</td>
+                  <td class="p-3 border">08:00 AM</td>
+                  <td class="p-3 border">09:00 AM</td>
+                  <td class="p-3 border">
+                    From a yoga class, you'll learn to improve flexibility, build strength, enhance balance, and develop...
+                  </td>
+                  <td class="p-3 border">Morning</td>
+                  <td class="p-3 border">Saturday, Sunday</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Add Class Form -->
+          <form class="mt-6 grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
+            <input type="text" placeholder="Enter Name" class="border border-gray-300 rounded p-2 col-span-1">
+            <input type="time" placeholder="Enter Time" class="border border-gray-300 rounded p-2 col-span-1">
+            <input type="time" placeholder="Enter Time" class="border border-gray-300 rounded p-2 col-span-1">
+            <input type="text" placeholder="Description" class="border border-gray-300 rounded p-2 col-span-2">
+            <input type="text" placeholder="Enter Batch" class="border border-gray-300 rounded p-2 col-span-1">
+            <select class="border border-gray-300 rounded p-2 col-span-1">
+              <option value="">Select Day</option>
+              <option value="mon">Monday</option>
+              <option value="tue">Tuesday</option>
+              <option value="wed">Wednesday</option>
+              <option value="thu">Thursday</option>
+              <option value="fri">Friday</option>
+              <option value="sat">Saturday</option>
+              <option value="sun">Sunday</option>
+            </select>
+            <button type="button" class="text-red-600 col-span-1">✖</button>
+          </form>
+          <div class="flex justify-end mt-4">
+            <button class="bg-orange-500 text-white px-6 py-2 rounded mr-4 hover:bg-orange-600">Save</button>
+            <button class="bg-gray-300 text-black px-6 py-2 rounded hover:bg-gray-400">Reset</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

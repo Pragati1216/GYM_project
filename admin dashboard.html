@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+     .arrow {
+      color: white; /* White color for the arrow */
+      font-size: 2rem; /* Adjust size of the arrow */
+      margin-right: 10px; /* Space between arrow and logo */
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-1/6 bg-gray-800 text-white flex flex-col">
+      <div class="p-4 flex items-center justify-center">
+        <span class="arrow">&#8592;</span>
+        <img src="logo.jpg" alt="Fitness Logo" class="w-16 h-16">
+       
+      </div>
+      <nav class="mt-8 flex flex-col space-y-4">
+        <div class="p-4 flex items-center justify-center">
+        <div>
+            <ul class="menu">
+              <li class="menu-item"><b>🏠</b>Admin</li><br>
+              <li class="menu-item"><b>👥</b>All Members</li><br>
+              <li class="menu-item"><b>👤</b>Trainer </li><br>
+              <li class="menu-item"><b>👥</b>Trainee </li><br>
+              
+              <!-- <div class="submenu">
+               <li class="submenu-item"><b class="icon">➕</b>Add Trainee</li>
+              <li class="submenu-item"><b class="icon">🗑</b>Dropped Trainee</li>
+              <li class="submenu-item"><b class="icon">📋</b>Member Details</li>
+                 <a class="submenu-item" >Add Trainee</a>
+                <a class="submenu-item">Dropped Trainee</a>
+                 <a class="submenu-item">Member Details</a> -->
+              <!-- </div>
+              <li class="menu-item"><i>🏋️‍♂️</i>Trainee</li> --> 
+              <li class="menu-item"><i>❤️</i>Health Updates</li><br>
+              <li class="menu-item"><i>💳</i>Member Payment</li><br>
+              <li class="menu-item"><i>📅</i>Plan</li>
+            </ul>
+          </div>
+        <!-- Add more sidebar items -->
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+      <!-- Header -->
+      <header class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold">Welcome Admin!</h2>
+        <div class="flex items-center space-x-4">
+          <input type="text" placeholder="Search here" class="px-4 py-2 border rounded-full">
+          <button class="p-2 bg-gray-200 rounded-full">
+            <img src="n.png" alt="Notifications" class="w-5">
+
+        </button>
+        <button class="p-2 bg-gray-200 rounded-full">
+          <img src="Settings.png" alt="setting" class="w-5">
+
+      </button>
+          <img src="3.jpg" alt="User Avatar" class="w-10 h-10 rounded-full">
+        </div>
+      </header>
+
+      <!-- Overview Cards -->
+      <div class="grid grid-cols-4 gap-7 mb-7">
+        <div class="p-8 bg-white shadow rectangle">
+        <h3 class="text-lg font-semibold">Class</h3>
+        <img src="image 1.jpg" alt="Admin Logo"class="w-600 h-600 rectangle-full">
+          <p class="text-2xl font-bold">4</p>
+        </div>
+        <div class="p-4 bg-white shadow rounded-lg">
+            <h3 class="text-lg font-semibold">Trainers</h3>
+            <img src="image 2.jpg" alt="Admin Logo" class="w-1000 h-1000  rectangle full shadow-md">
+          
+          <p class="text-2xl font-bold">8</p>
+        </div>
+        <div class="p-4 bg-white shadow rounded-lg">
+          <h3 class="text-lg font-semibold">Members</h3>
+          <img src="image 3.jpg" alt="Admin Logo" class="w-1000 h-1000  rectangle full shadow-md">
+          <p class="text-2xl font-bold">20</p>
+        </div>
+        <div class="p-4 bg-white shadow rounded-lg">
+          <h3 class="text-lg font-semibold">Payments</h3>
+          <img src="image 4.jpg" alt="Admin Logo" class="w-1000 h-1000  rectangle full shadow-md">
+          <p class="text-2xl font-bold">$XX</p>
+        </div>
+      </div>
+
+      <!-- Main Dashboard -->
+      <div class="grid grid-cols-2 gap-6">
+        <!-- New Registrations Table -->
+        <div class="bg-white shadow rounded-lg p-4">
+          <h3 class="text-xl font-bold mb-4">New Registrations</h3>
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-gray-200 text-left">
+                <th class="p-2">Sr. No</th>
+                <th class="p-2">Full Name</th>
+                <th class="p-2">Contact No.</th>
+                <th class="p-2">Class</th>
+                <th class="p-2">Period</th>
+                <th class="p-2">Time Slot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t">
+                <td class="p-2">1</td>
+                <td class="p-2">Rohan Jadhav</td>
+                <td class="p-2">1234567890</td>
+                <td class="p-2">Yoga</td>
+                <td class="p-2">2 Months</td>
+                <td class="p-2">08:00-09:00</td>
+              </tr>
+              <!-- Repeat for other rows -->
+              <tr class="border-t">
+                <td class="p-2">1</td>
+                <td class="p-2">Rohan Jadhav</td>
+                <td class="p-2">1234567890</td>
+                <td class="p-2">Yoga</td>
+                <td class="p-2">2 Months</td>
+                <td class="p-2">08:00-09:00</td>
+              </tr>
+
+              <tr class="border-t">
+                <td class="p-2">1</td>
+                <td class="p-2">Rohan Jadhav</td>
+                <td class="p-2">1234567890</td>
+                <td class="p-2">Yoga</td>
+                <td class="p-2">2 Months</td>
+                <td class="p-2">08:00-09:00</td>
+              </tr>
+
+              <tr class="border-t">
+                <td class="p-2">1</td>
+                <td class="p-2">Rohan Jadhav</td>
+                <td class="p-2">1234567890</td>
+                <td class="p-2">Yoga</td>
+                <td class="p-2">2 Months</td>
+                <td class="p-2">08:00-09:00</td>
+              </tr>
+
+              <tr class="border-t">
+                <td class="p-2">1</td>
+                <td class="p-2">Rohan Jadhav</td>
+                <td class="p-2">1234567890</td>
+                <td class="p-2">Yoga</td>
+                <td class="p-2">2 Months</td>
+                <td class="p-2">08:00-09:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Total Trainee Chart -->
+        <div class="bg-white shadow rounded-lg p-4">
+          <h3 class="text-xl font-bold mb-4">Total Trainee</h3>
+          <div class="flex items-center justify-center h-48">
+            <!-- Placeholder for Pie Chart -->
+            <div class="relative w-32 h-32">
+              <svg class="absolute inset-0 w-full h-full">
+                <circle cx="50%" cy="50%" r="40%" stroke="gray" stroke-width="6" fill="transparent" />
+                <circle cx="50%" cy="50%" r="40%" stroke="orange" stroke-width="6" fill="transparent" stroke-dasharray="75 25" />
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <p class="text-xl font-bold">80</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

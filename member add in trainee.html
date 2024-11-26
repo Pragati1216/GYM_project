@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Trainee</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .arrow {
+      color: white; /* White color for the arrow */
+      font-size: 2rem; /* Adjust size of the arrow */
+      margin-right: 10px; /* Space between arrow and logo */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-white">
+      <div class="flex items-center justify-center h-20 border-b border-gray-700">
+
+        <span class="arrow">&#8592;</span>
+        <img src="logo.jpg" alt="Fitness Logo" class="h-12">
+        
+      </div>
+      <nav class="mt-6">
+        <ul>
+          <li>
+            <a href="#" class="block px-4 py-3 hover:bg-gray-700">
+              Admin
+            </a>
+            <a href="#" class="block px-4 py-3 hover:bg-gray-700">
+            All Members
+              </a>
+            <ul class="ml-4">
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-600"> 👥Add Trainee</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-600">🏋️‍♂️Dropped Trainee</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-600">📅Member Details</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="block px-4 py-3 hover:bg-gray-700">👤Trainer</a></li>
+          <li><a href="#" class="block px-4 py-3 hover:bg-gray-700">👥Trainee</a></li>
+          <li><a href="#" class="block px-4 py-3 hover:bg-gray-700">❤️Health Updates</a></li>
+          <li><a href="#" class="block px-4 py-3 hover:bg-gray-700">💳Member Payment</a></li>
+          <li><a href="#" class="block px-4 py-3 hover:bg-gray-700">📅Plan</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <!-- Header -->
+      <header class="flex items-center justify-between mb-6">
+        <h1 class="text-2xl font-bold">Welcome Admin!</h1>
+        <div class="flex items-center space-x-4">
+            <button class="p-2 bg-gray-200 rounded-full">
+                <img src="n.png" alt="Notifications" class="w-5">
+    
+            </button>
+            <button class="p-2 bg-gray-200 rounded-full">
+              <img src="Settings.png" alt="setting" class="w-5">
+            </button>
+    
+          <div class="flex items-center space-x-2">
+
+            <img src="3.jpg" alt="User Avatar" class="rounded-full w-10 h-10">
+            <span>Username</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Form Section -->
+      <section class="bg-white p-6 rounded shadow">
+        <h2 class="text-xl font-bold mb-4">Add Trainee</h2>
+        <form class="grid grid-cols-2 gap-6">
+          <!-- Left Column -->
+          <div>
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-medium">Name</label>
+              <input type="text" id="name" class="w-full border border-gray-300 rounded-lg p-2">
+            </div>
+            <div class="mb-4">
+              <label for="dob" class="block text-gray-700 font-medium">DOB</label>
+              <input type="date" id="dob" class="w-full border border-gray-300 rounded-lg p-2">
+            </div>
+            <div class="mb-4">
+              <label for="age" class="block text-gray-700 font-medium">Age</label>
+              <input type="number" id="age" class="w-full border border-gray-300 rounded-lg p-2">
+            </div>
+            <div class="mb-4">
+              <label for="membership" class="block text-gray-700 font-medium">Membership</label>
+              <select id="membership" class="w-full border border-gray-300 rounded-lg p-2">
+                <option value="">Select Membership</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label for="payment-date" class="block text-gray-700 font-medium">Next Payment Schedule Date</label>
+              <input type="date" id="payment-date" class="w-full border border-gray-300 rounded-lg p-2">
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-medium">Email ID</label>
+              <input type="email" id="email" class="w-full border border-gray-300 rounded-lg p-2">
+            </div>
+            <div class="mb-4">
+              <label for="contact" class="block text-gray-700 font-medium">Contact Number</label>
+              <input type="tel" id="contact" class="w-full border border-gray-300 rounded-lg p-2">
+            </div>
+            <div class="mb-4">
+              <label for="address" class="block text-gray-700 font-medium">Address</label>
+              <textarea id="address" rows="3" class="w-full border border-gray-300 rounded-lg p-2"></textarea>
+            </div>
+            <div class="mb-4">
+              <label for="photo" class="block text-gray-700 font-medium">Photo</label>
+              <input type="file" id="photo" class="w-full border border-gray-300 rounded-lg p-2">
+            </div>
+            <div class="mb-4">
+              <label for="trainer" class="block text-gray-700 font-medium">Personal Trainer</label>
+              <select id="trainer" class="w-full border border-gray-300 rounded-lg p-2">
+                <option value="">Select Trainer</option>
+                <option value="trainer1">Trainer 1</option>
+                <option value="trainer2">Trainer 2</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <!-- Buttons -->
+        <div class="mt-6 flex justify-content space-x-4">
+          <button class="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">Save</button>
+          <button class="bg-gray-500 text-white px-6 py-2 rounded-lg hover:bg-gray-600">Reset</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

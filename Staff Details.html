@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-900 text-white flex flex-col">
+            <div class="p-4 flex items-center">
+                <span class="arrow">&#8592;</span>
+                
+                <img src="logo.jpg" alt="Fitness Logo" class="h-12 mr-2"> <!-- Replace with your logo -->
+              
+            </div>
+            <nav class="flex-1">
+                <ul>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            <!-- <span class="material-icons-outlined">dashboard</span> -->
+                            <!-- <span class="ml-2">Admin</span>
+                        </a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Staff/Trainers</a>
+                        <a href="#" class="block p-2 bg-gray-800 text-white rounded">Membership</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">All Classes</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Attendance</a>
+                    </li>
+                </ul> -->
+                <span class="ml-2">Admin</span>
+                        </a>
+                    </li>
+                    <li class="pl-4">
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">Staff/Trainers</a>
+                        <a href="#" class="block p-2 bg-gray-800 text-white rounded">Membership</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800">All Classes</a>
+                        <a href="#" class="block p-2 text-gray-300 hover:bg-gray-800"></a>Attendance</a>
+                    </li>
+                </ul>
+                <ul class="mt-4">
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">All Members</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">Trainer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">Trainee</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                           
+                            <span class="ml-2">Health Updates</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                           
+                            <span class="ml-2">Member Payments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-3 hover:bg-gray-800">
+                            
+                            <span class="ml-2">Plan</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-5">
+            <header class="flex justify-between items-center mb-5">
+                <h1 class="text-xl font-bold">Welcome Admin!</h1>
+                <div class="flex items-center gap-3">
+                    <button class="p-2 bg-gray-200 rounded-full">
+                        <img src="n.png" alt="Notifications" class="w-5">
+                    </button>
+                    <button class="p-2 bg-gray-200 rounded-full">
+                        <img src="Settings.png" alt="setting" class="w-5">
+
+                    </button>
+                    <p>Username</p>
+                    <img src="3.jpg" alt="Profile" class="ml-4 h-10 w-10 rounded-full">
+                </div>
+            </header>
+
+            <!-- Details Section -->
+            <div class="bg-white p-5 rounded shadow">
+                <h2 class="text-lg font-bold mb-7">View Details</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <!-- Personal Details -->
+                    <div class="col-span-1 md:col-span-2">
+                        <h3 class="text-gray-700 font-bold mb-3">Personal Details</h3>
+                        <div class="flex items-center mb-5">
+                            <img src="22.jpg" alt="Profile Picture" class="w-30 h-30 rounded-full mr-5">
+                            <div>
+                                <h4 class="text-xl font-bold">Staff Full Name</h4>
+                                <p class="text-gray-500">Yoga</p>
+                            </div>
+                        </div>
+                        <h4 class="text-gray-700 font-bold mb-3">About</h4>
+                        <p class="text-gray-600" >
+                            She is a certified yoga instructor with over 2 years of experience teaching a variety of yoga styles, including Vinyasa, Hatha, and Yin yoga. She specializes in creating inclusive, beginner-friendly classes while also offering advanced poses for seasoned practitioners. Sarah's approach combines mindfulness, breath control, and strength-building techniques. She is passionate about helping students enhance their flexibility, balance, and inner calm, making every session both challenging and rejuvenating.
+                        </p>
+                        <h4 class="text-gray-700 font-bold mt-5">Date of Birth</h4>
+                        <p class="text-gray-600">September 24, 1995</p>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div>
+                        <h3 class="text-gray-700 font-bold mb-3">Contact Details</h3>
+                        <div class="mb-3">
+                            <h4 class="text-gray-700 font-bold">Email</h4>
+                            <p class="text-blue-500"><a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+                        </div>
+                        <div class="mb-3">
+                            <h4 class="text-gray-700 font-bold">Contact No.</h4>
+                            <p class="text-blue-500"><a href="tel:1234567890">1234567890</a></p>
+                        </div>
+                        <div>
+                            <h4 class="text-gray-700 font-bold">Address</h4>
+                            <p class="text-gray-600">
+                                123 Harmony Lane, Suite 4B<br>
+                                Melodyville, State 56789<br>
+                                Country
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
